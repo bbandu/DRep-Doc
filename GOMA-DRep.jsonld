@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "GOMA-DRep"
+    },
+    "motivations": {
+      "@value": "Goma Hub, Your Dedicated DRep\n\nSince 2020, Goma Hub has been at the heart of the Cardano ecosystem. We have trained, equipped, and mobilized the local community around Cardano, organizing events, workshops, and training sessions. Our staking pool supports the network, and we have successfully completed several Catalyst projects.\n\nAs your DRep, we are committed to:\n\nRepresenting your interests within Cardano's governance.\nPromoting transparency and decentralized governance.\nSupporting innovation and local development.\nStrengthening Cardano's position on a global scale.\nJoin us to build a better future with Cardano."
+    },
+    "objectives": {
+      "@value": "As a dedicated Delegated Representative (DRep) for the Cardano network, The GOMA DRep vision is to foster a transparent, inclusive, and accountable governance environment that prioritizes the well-being of the community and the long-term success of the ecosystem."
+    },
+    "paymentAddress": {
+      "@value": "addr1q820znf8j335z4dtqzr24kzwp2rjdu848w0yptcftc26gqcytrdcghfvdmuva2yxe0ysejc39vfmw9qtmh8lmnrpmdrqm4e5pa"
+    },
+    "qualifications": {
+      "@value": "As a DRep representing the community, we possess a strong foundation in blockchain technology and a deep understanding of Cardano's ecosystem. My qualifications include:\n\nTechnical expertise: Solid understanding of Cardano's technical architecture, including its consensus mechanism, tokenomics, and smart contract platform.\nCommunity engagement: Extensive experience in building and fostering community engagement within the Cardano ecosystem.\nGovernance knowledge: Familiarity with decentralized governance principles and best practices.\nLeadership skills: Proven ability to lead and motivate a team towards shared goals.\nCommunication skills: Strong communication and interpersonal skills to effectively represent the interests of the Goma community.\nThese qualifications equip me to effectively fulfill my role as a DRep and contribute to the successful governance of the Cardano network"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "GOMA-DRep X link where you'll find all our news and where we can interact."
+        },
+        "uri": {
+          "@value": "https://x.com/gomadrep"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Goma Stake Pool website Link  where you can follow our activities"
+        },
+        "uri": {
+          "@value": "https://gomapool.com/"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Goma Stake Pool Youtube channel Link where we share our workshops"
+        },
+        "uri": {
+          "@value": "https://www.youtube.com/@gomastakepool5102"
+        }
+      }
+    ]
+  }
+}
